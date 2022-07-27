@@ -2,6 +2,23 @@ function TE = transfer_entropy(v1, v2, bin1, bin2, delay)
 
 %
 %   transfer_entropy.m
+%       calculates transfer entropy (v2 -> v1)
+%
+%   AUTHOR: Matasaburo Fukutomi
+%
+%   LAST UPDATE:    07/27/2022
+%
+%   USAGE:  TE = transfer_entropy(v1, v2, bin1, bin2, delay)
+%
+%   VARIABLES:
+%       inputs
+%           v1 = a vector of process 1 (hypothetical effect)
+%           v2 = a vector of process 2 (hypothetical cause)
+%           bin1 = binning for v1
+%           bin2 = binning for v2
+%           delay = a vector of time points for delay
+%       outputs
+%           TE = transfer entropy
 %
 
 n_v1 = length(v1);
