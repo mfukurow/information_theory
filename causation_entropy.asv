@@ -2,24 +2,7 @@ function CSE = causation_entropy(datamat, bincell, delay)
 
 %
 %   causation_entropy.m
-%       calculates causation entropy
-%
-%   AUTHOR: Matasaburo Fukutomi
-%
-%   LAST UPDATE:    07/29/2022    
-%
-%   USAGE:  CSE = causation_entropy(datamat, bincell, delay)
-%
-%   VARIABLES:
-%       inputs
-%           datamat a matrix including data
-%                   the first colomn must include hypothetical effect
-%                   the second colomn must include hypothetical cause
-%           bincell a cell including binning
-%                   the order must correspond to the order of colomn
-%                   datamat
-%           delay   a vector of time points for delay
-%           
+%       calculates 
 %
 
 n_delay = length(delay);
