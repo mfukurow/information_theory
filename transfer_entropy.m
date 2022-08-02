@@ -1,4 +1,4 @@
-function TE = transfer_entropy(v1, v2, bin1, bin2, delay)
+function [TE, H1, H2, H3, H4] = transfer_entropy(v1, v2, bin1, bin2, delay)
 
 %
 %   transfer_entropy.m
@@ -6,7 +6,7 @@ function TE = transfer_entropy(v1, v2, bin1, bin2, delay)
 %
 %   AUTHOR: Matasaburo Fukutomi
 %
-%   LAST UPDATE:    07/27/2022
+%   LAST UPDATE:    08/02/2022
 %
 %   USAGE:  TE = transfer_entropy(v1, v2, bin1, bin2, delay)
 %
@@ -19,6 +19,10 @@ function TE = transfer_entropy(v1, v2, bin1, bin2, delay)
 %           delay   a vector of time points for delay
 %       outputs
 %           TE      transfer entropy
+%           H1      the first item
+%           H2      the second item
+%           H3      the third item
+%           H4      the fourth item
 %
 
 n_v1 = length(v1);
